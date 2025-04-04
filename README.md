@@ -22,6 +22,11 @@
     - [Support and Feedback](#Support-and-Feedback)
   - Installation
     - [Bare Metal or Virtual Machine](#Bare-Metal-or-Virtual-Machine)
+    - [Arch Linux Install Process](#Arch-Linux-Install-Process)
+    - [chroot Environment](#chroot-Environment)
+    - [Fix Discover app backend](#Fix-Discover-app-backend)
+  - [Tweaks and Improvements](Tweaks-and-Improvements)
+  - [Themes](#Themes)
   - [Guides](#Guides)
   - [Miscellaneous](#Miscellaneous)
 </details>
@@ -252,7 +257,10 @@ Optional: If you have a good computer and internet connection then remove the ha
 #### Make bash colorful
 Here we will make the terminal more colourful, this involves downloading a premade colour scheme.
 
-- Download `Linux_terminal_color.zip` from the files folder in this repo.
+> [!NOTE]  
+> This terminal colour scheme was made by [Average Linux User](https://averagelinuxuser.com/).
+
+- Download [Linux_terminal_color.zip](https://averagelinuxuser.com/assets/images/posts/2019-01-18-linux-terminal-color/Linux_terminal_color.zip).
 - Type `sudo pacman -S unzip` to install unzip.
 - Type `cd Downloads/`
 - Type `unzip Linux_terminal_color.zip`
@@ -324,6 +332,12 @@ Almost all Linux distributions come with a inactive firewall. The Linux kernel h
 - Type `sudo ufw enable`
 - Type `sudo ufw status verbose` to check it's status to make sure it's active.
 - Type `sudo systemctl enable ufw.service` to make it auto start with the system.
+
+![---](https://github.com/senkawolf/Beginner-Exploring-Arch-Linux/blob/main/media/line.png?raw=true)
+
+<h2 align="center">Themes</h2>
+
+### XeroLinux
 
 ![---](https://github.com/senkawolf/Beginner-Exploring-Arch-Linux/blob/main/media/line.png?raw=true)
 
