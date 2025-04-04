@@ -125,10 +125,12 @@ You will now be in the CLI Environment, move onto the next section [Arch Linux I
 <h2 align="center">Arch Linux Install Process</h2>
 Now we will be going through the install process of Arch Linux, follow the steps below.
 
-- Optional: Increase the font size type the command `setfont ter-132n`.
-    - To change it back to the default type `setfont`
-- Clearing Console: If you want to clear the console screen you can by pressing `Ctrl + L` this can help declutter the console to make it easier to follow along.
----
+> [!TIP]
+> To increase the font size type the command `setfont ter-132n`.
+> To change it back to the default type `setfont`.
+> 
+> If you want to clear the console screen you can by pressing `Ctrl + L` this can help declutter the console to make it easier to follow along.
+
 - Connecting to the internet.
     - If you are using a ethernet cable you can use the ping command to check the connection. Type `ping google.com` and you should see a ping return.
         - To stop the pings press `Ctrl + C`.
@@ -319,3 +321,7 @@ Almost all Linux distributions come with a inactive firewall. The Linux kernel h
 ![---](https://github.com/senkawolf/Beginner-Exploring-Arch-Linux/blob/main/media/line.png?raw=true)
 
 <h1 align="center">Miscellaneous</h1>
+
+![---](https://github.com/senkawolf/Beginner-Exploring-Arch-Linux/blob/main/media/line.png?raw=true)
+
+**[![ ](https://github.com/senkawolf/Beginner-Exploring-Arch-Linux/blob/main/media/up25.png) Back to Top](#Table-of-Contents)**
