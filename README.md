@@ -124,9 +124,10 @@ You will now be in the CLI Environment, move onto the next section [Arch Linux I
 
 <h2 align="center">Arch Linux Install Process</h2>
 Now we will be going through the install process of Arch Linux, follow the steps below.
-
+ 
 > [!TIP]
 > To increase the font size type the command `setfont ter-132n`.
+> 
 > To change it back to the default type `setfont`.
 > 
 > If you want to clear the console screen you can by pressing `Ctrl + L` this can help declutter the console to make it easier to follow along.
@@ -246,6 +247,8 @@ Here we are going to improve the visuals of pacman.
 
 Optional: If you have a good computer and internet connection then remove the hashtag in front of `ParalleDownloads = 5` so pacman will download several packages at the simultaneously.
 
+---
+
 #### Make bash colorful
 Here we will make the terminal more colourful, this involves downloading a premade colour scheme.
 
@@ -261,11 +264,15 @@ mv .bashrc ~/.bashrc
 ```
 - Close and reopen Konsole.
 
+---
+
 #### Automatic package cache cleaning <sup>[Wiki](https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache)</sup>
 Downloading package updates can take up a large amount of space over time, this will automatically clear the cache for you. The below instructions will clear the cache weekly but leave 3 of the most recent versions of each package incase you need to downgrade anything.
 
 - Type `sudo pacman -S pacman-contrib`
 - Type `sudo systemctl enable paccache.timer`
+
+---
 
 #### Installing AUR Helper <sup>[Wiki](https://wiki.archlinux.org/title/Arch_User_Repository)</sup>
 The Arch User Repository (AUR) is a communuty-drive repository of packages. If a package isn't in the official Arch repository it most likey found in the AUR.
@@ -276,6 +283,8 @@ The Arch User Repository (AUR) is a communuty-drive repository of packages. If a
 - Type `git clone https://aur.archlinux.org/yay.git`
 - Type `cd yay/`
 - Type `makepkg -si`
+
+---
 
 #### Create user folders <sup>[Wiki](https://wiki.archlinux.org/title/XDG_user_directories)</sup>
 By default you don't get the common folders like pictures, videos etc like you do in Windows. Here is a easy way to create them without having to do it manually.
@@ -290,6 +299,8 @@ Intel: `sudo pacman -S intel-ucode`
 
 AMD: `sudo pacman -S amd-ucode`
 
+---
+
 #### Disable GRUB delay
 To speed up your boot process you can disable the GRUB screen and boot into Arch Linux right away. If you need the GRUB screen you can get to it by holding ESC key whilst booting your virtual machine or computer.
 
@@ -300,6 +311,8 @@ To speed up your boot process you can disable the GRUB screen and boot into Arch
 - Press Ctrl + X to exit.
 - Type `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 - Type `sudo reboot now`
+
+---
 
 #### Set up firewall <sup>[Wiki](https://wiki.archlinux.org/title/Uncomplicated_Firewall)</sup>
 Almost all Linux distributions come with a inactive firewall. The Linux kernel has a built-in firewall and technically all Linux distros have this but it is not configured and activated. Linux is still secure even without an active firewall. By default, most of the distributions have no open ports. It is better to be safe than sorry to add a firewall. A firewall does use some system resources, but not enought to make a impact and it adds an extra layer of security making it worth while.
